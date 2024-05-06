@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:greenyellow; 
+}
+.header{
+    padding: 30px;
+    color: black;
+    background:linear-gradient(90deg,white,green);
+    font-weight: bold;
+    box-shadow: 2px 2px 10px 5px black;
+}
+.container{
+    margin-top: 0px;
+    display: flex;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.nav{
+    width: 18%;
+    background: linear-gradient(90deg, white,white);
+    border-top-right-radius: 40px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 10px 5px black;
+}
+.menu{
+    margin:20px auto;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.menuItem{
+    font-size: 13px;
+    width: 250px;
+    box-shadow: 2px 2px 10px 5px black;
+    padding: 7px;
+    border:0px;
+    text-align: left;
+    background: linear-gradient(90deg, white,white);
+    border: 1px solid black;
+    color:black;
+    margin: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all .5s;
+    font-weight: bold;
+    font-size: 15px;
+}
+.menuItem:hover{
+    width: 300px;
+    background: linear-gradient(to left, green,green);
+    text-align: center;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-right: 10px;
+    box-shadow: 2px 2px 10px 5px black;
+}
+
+h1{
+    margin-bottom: 30px;
+    background-color: green;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    /* border-radius: 10px; */
+}
+.workspace{
+    width: 82%;
+    background:linear-gradient(90deg,white,green);
+    border: 1px solid black;
+    border-top-left-radius: 40px;
+    box-shadow: 2px 2px 10px 5px black;
+}
+.contentContainer{
+    position: relative;
+    margin: auto;
+    left: 25px;
+    display: block;
+    width: 75%;
+    background:white;
+    animation-name: formHolder;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 10px 2px 20px 10px black;
+    
+}
+@keyframes formHolder {
+    0%{top:-1000px;}
+    100%{top: 0px;left: 70px;box-shadow: 2px 2px 20px 10px black;}
+}
+.contentHeader{
+    padding: 15px;
+    padding-left: 20px;
+    background:green;
+    color: white;
+    font-weight: bold;
+}
+.contentBody{
+    padding: 50px;
+    padding-top: 30px;
+    padding-left: 60px;
+    font-weight: bold;
+    color: white;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.contentFooter{
+    padding:20px;
+    border-bottom-left-radius: 50px;
+    background: green;
+    border-bottom-right-radius: 50px;
+}
+.regularSelect{
+    width: 45%;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom-right-radius: 20px;
+}
+.regularInput{
+    border: 1px solid;
+    width: 97%;
+    font-size: 18px;
+    padding: 10px;
+    border-bottom-right-radius: 20px;
+}
+.operationButtons{
+    padding:10px;
+    width:20%;
+    margin-top:20px;
+    border:1px solid black;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px 2px black;
+}
+.structure{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0em 2em;
+}
+
+.labels{
+    font-size: 20px;
+    text-align: center;
+    width: 10%;
+    color: white;
+    background-color: green;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 20px;
+    animation-name: labels;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+/* @keyframes labels {
+    0%{background-color: black; color: white;width: 12%;}
+    100%{background-color: red;color: white;}
+} */
+
+.inputs{
+    /* background:linear-gradient(to bottom right,white,red); */
+    font-size: 20px;
+    width: 200px;
+    color: black;
+    padding-left: 0px;
+    text-align: left;
+}
+.optionGuide{
+    background-color: green;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.display{
+    display:block;
+    margin: -10px auto;
+    border-spacing: 40px;
+    margin-left: 200px;
+    width: 80%;
+    float: right;
+}
+.hour,.minute,.second,.section{
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    position: relative;
+    
+}
+.hour{
+    background-color: white;
+    animation-name: hour;
+    color: black;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+/* @keyframes hour {
+    0%{background-color: greenyellow;color:black;}
+    100%{left: 0px;color:white;}
+} */
+.minute{
+    background-color: green;
+    animation-name: minute;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes minute {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+} */
+
+.second{
+    background-color: white;
+    color: black;
+    animation-name: second;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes second {
+    0%{top: 250px;background-color: green;}
+    100%{top: -100px;box-shadow: 0px 0px 40px 10px black;}
+}
+.section{
+    background-color: green;
+    animation-name: section;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+/* @keyframes section {
+    0%{background-color: black;}
+} */
+.day{
+    background-color: green;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    width: 400px;
+}
+.bar{
+    position: relative;
+    background-color: green;
+    padding: 7px;
+    top:200px;
+    border-radius: 20px;
+    animation-name: bar;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes bar {
+    0%{right:150px;background-color: white;box-shadow: 2px 2px 20px 10px black;}
+    100%{right:0px;}
+}
+
+.message{
+    padding: 12px;
+    width: 50%;
+    margin: 30px auto;
+    z-index: 1;
+    box-shadow: 3px 3px 20px 10px black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    float: right;
+    padding-left: 20px;
+    position: relative;
+    font-size: 17px;
+    font-weight: bold;
+    animation-name: message;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    color: white;
+}
+
+@keyframes message {
+    0%{left:400px}
+    50%{left: 0px;}
+    100%{left: 100px;}
+}
+

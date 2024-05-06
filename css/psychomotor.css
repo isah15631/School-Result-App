@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:white; 
+}
+.header{
+    padding: 30px;
+    color: black;
+    background:linear-gradient(90deg,white,green);
+    font-weight: bold;
+    box-shadow: 2px 2px 10px 5px black;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.uploadForm{
+    padding: 15px;
+    background:orangered;
+    border: 1px solid black;
+    /* position: sticky;
+    z-index: 1;
+    top: 70px; */
+}
+.upload{
+    padding: 5px;
+    width: 9%;
+    border: 0px;
+    background-color: seagreen;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 3px 2px 4px black;
+    font-size: 18px;
+    transition: all .5s;
+}
+.upload:hover{
+    background-color: rgba(0, 255, 0, .7);
+}
+.fileUploadInput{
+    background-color: red;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    width: 20%;
+    border: 0px;
+    font-size: 18px;
+    transition: all .5s;
+}
+.fileUploadInput:hover,select:hover{
+    box-shadow: 2px 3px 2px 4px black;
+}
+select{
+    background-color:white;
+    padding: 7px;
+    border-radius: 10px;
+    transition: all .5s;
+    color:black;
+    font-size: 15px;
+    width: 22%;
+    border: 1px dotted green;
+    margin: 10px auto;
+    margin-right: 10px;
+    font-weight: bold;
+    
+}
+select:hover{
+    color: white;
+}
+table{
+    width: 100%;
+    margin: 0px auto;
+    border-spacing: 0em .1em;
+    border-collapse: separate;
+}
+th{
+    background-color: black;
+    padding: 17px;
+    text-align: left;
+    padding-left: 45px;
+    color: white;
+}
+td{
+    padding:10px;
+    background-color:white;
+    border-bottom: 1px solid black;
+    padding-left: 45px;
+    font-size: 13px;
+    font-weight: bold;
+    animation-name: dataShow;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes dataShow {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.regularInput{
+    padding: 7px;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 50%;
+    border: 0px;
+}
+.del{
+    padding: 7px;
+    background-color: red;
+    border: 0px;
+    border-radius: 10px;
+    width: 80px;
+    color: white;
+    transition: all .6s;
+    font-weight: bold;
+}
+.del:hover{
+    background-color:greenyellow;
+    color: black;
+}
+.edit{
+    padding: 7px;
+    background-color:orangered;
+    border: 0px;
+    border-radius: 10px;
+    width: 75px;
+    color: white;
+    font-weight: bold;
+    transition: all .6s;
+}
+.edit:hover{
+    background-color: maroon;
+
+}
+.promote{
+    padding: 7px;
+    background-color:purple;
+    border: 0px;
+    border-radius: 10px;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    transition: all .6s;
+}
+
+.promote:hover{
+    background-color: green;
+
+}
+.datahead{
+    visibility: visible;
+    animation-name: theading;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* @keyframes theading {
+    0%{visibility: hidden;}
+    100%{visibility: visible;display: block;}
+} */
+
+.optionGuide{
+    background-color: green;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.search{
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+    transition: all .5s;
+    color:black;
+    font-size: 18px;
+    width: 27%;
+    border: 0px;
+}
+.actions{
+    background-color: white;
+}
+.modal{
+    z-index: 1;
+    position: fixed;
+    overflow-y: scroll;
+    background-color:rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    display: none;
+    animation-name: modalAnime;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes modalAnime {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.modalContainer{
+    width: 65%;
+    background-color: green;
+    margin:20px auto;
+    position: relative;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    animation-name: containerAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    box-shadow: 3px 2px 10px 10px black;
+}
+@keyframes containerAnime {
+    0%{left:1000px;}
+    50%{left:-100px;}
+    100%{left:0px}
+}
+.modalHeader{
+    padding: 20px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+.closeModal:hover{
+    color: yellow;
+}
+.modalBody{
+    padding: 20px;
+    padding-left: 40px;
+    font-weight: bold;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: white;
+}
+.modalInput{
+    padding: 8px;
+    width: 97%;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all .5s;
+    margin-top: 10px;
+}
+.modalInput:hover{
+    border: 1px solid green;
+    box-shadow: 2px 3px 20px 10px rgba(0, 0, 0, .7);
+}
+.modalFooter{
+    background-color: green;
+    padding: 20px;
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.modalSubmit{
+    padding: 12px;
+    width: 150px;
+    border: 0px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.modalSubmit:hover{
+    background-color: red;
+}
+h1{
+    margin: 10px auto;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    width: 45%;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.complete{
+    background-color: green;
+    color: white;
+}
+.notComplete{
+    background-color: maroon;
+    color: white;
+}
+
+.message{
+    padding: 12px;
+    width: 50%;
+    margin: 10px auto;
+    box-shadow: 3px 3px 20px 10px black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    float: right;
+    padding-left: 20px;
+    position: relative;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: green;
+    animation-name: message;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    display: block;
+    color: white;
+}
+
+@keyframes message {
+    0%{left:400px}
+    50%{left: 0px;}
+    100%{left: 100px;}
+}
+.guide{
+    padding:10px;
+    border:1px solid;
+    font-size:15px;
+    background:black;
+    color:white;
+    padding-left: 20px;;
+}
